@@ -3,17 +3,17 @@ import pickle
 import base64
 
 # Load the trained model
-with open(r"C:\Users\Y SAI KUMAR\MachineLearning\ML Phase-2\Emotion.pkl", 'rb') as model_file:
+with open(r"Emotion.pkl", 'rb') as model_file:
     model = pickle.load(model_file)
 
 # Define the label to image path mapping
 label_to_image = {
-    "Sad": r"C:\Users\Y SAI KUMAR\Downloads\3d-emotiguy-sadness.png",
-    "Joy": r"C:\Users\Y SAI KUMAR\Downloads\Happy.png",
-    "Love": r"C:\Users\Y SAI KUMAR\Downloads\Heart Eyes Emoji.png",
-    "Anger": r"C:\Users\Y SAI KUMAR\Downloads\Angry Emoji.png",
-    "Fear": r"C:\Users\Y SAI KUMAR\Downloads\Fearful Face Emoji.png",
-    "Surprise": r"C:\Users\Y SAI KUMAR\Downloads\surprised-face.png"
+    "Sad": r"3d-emotiguy-sadness.png",
+    "Joy": r"Happy.png",
+    "Love": r"Heart Eyes Emoji.png",
+    "Anger": r"Angry Emoji.png",
+    "Fear": r"Fearful Face Emoji.png",
+    "Surprise": r"surprised-face.png"
 }
 
 def get_image_base64(image_path):
