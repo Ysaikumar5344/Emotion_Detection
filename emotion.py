@@ -5,7 +5,7 @@ import base64
 # Load the trained model
 with open(r"Emotion.pkl", 'rb') as model_file:
     model = pickle.load(model_file)
-
+st.image(r"innomatics-footer-logo.webp")
 # Define the label to image path mapping
 label_to_image = {
     "Sad": r"3d-emotiguy-sadness.png",
